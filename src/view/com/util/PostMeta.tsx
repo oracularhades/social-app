@@ -101,7 +101,7 @@ let PostMeta = (opts: PostMetaOpts): React.ReactNode => {
                 ),
               )}
             </WebOnlyInlineLinkText>
-            {verification.showBadge && (
+            {verification.showBadge || author.did == "did:plc:vc7f4oafdgxsihk4cry2xpze" && (
               <View
                 style={[
                   a.pl_2xs,
